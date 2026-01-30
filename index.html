@@ -13,7 +13,11 @@
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 
-	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
@@ -34,12 +38,13 @@
 		<div class="container">
 			<div class="navbar-header">
 				<!-- Button for smallest screens -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#navbar-collapse-1"><span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> </button>
 				<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"
 						alt="JamesClon Aplicaciones"></a>
 			</div>
-			<div class="navbar-collapse collapse">
+			<div class="navbar-collapse collapse" id="navbar-collapse-1">
 				<ul class="nav navbar-nav pull-right">
 					<li class="active"><a href="#">Inicio</a></li>
 					<li><a href="about.html">Nosotros</a></li>
@@ -62,7 +67,7 @@
 	<!-- Header -->
 	<header id="head">
 		<div class="container">
-			<div class="row">
+			<div class="row animate-up">
 				<h1 class="lead">JAMESCLON APLICACIONES</h1>
 				<p class="tagline">LAS APLICACIONES QUE INTERESAN <a
 						href="https://play.google.com/store/apps/dev?id=6573172208926767977" target="_blank">desde
@@ -94,7 +99,7 @@
 
 			<h3 class="text-center thin">Últimos lanzamientos</h3>
 
-			<div class="row">
+			<div class="row animate-up">
 				<div class="col-md-4 col-sm-6 highlight">
 					<div class="h-caption">
 						<h4><i class="fa fa-book fa-5"></i><a
@@ -251,11 +256,11 @@
 					<div class="col-md-6 widget">
 						<div class="widget-body">
 							<p class="simplenav">
-								<a href="#">Inicio</a> |
+								<a href="index.html">Inicio</a> |
 								<a href="about.html">Nosotros</a> |
-								<a href="sidebar-right.html">Trabajos</a> |
-								<a href="contact.html">Contacto</a>
-
+								<a href="sidebar-right.html">Otros</a> |
+								<a href="contact.html">Contacto</a> |
+								<a href="politica-privacidad-web.html">Privacidad</a>
 							</p>
 						</div>
 					</div>
@@ -279,9 +284,19 @@
 
 
 
+	<!-- Cookie Banner -->
+	<div id="cookie-banner" class="cookie-banner">
+		<p>Utilizamos cookies propias para asegurar la mejor experiencia en nuestra web. Al continuar navegando, aceptas
+			su uso. <a href="politica-privacidad-web.html">Más información</a>.</p>
+		<div class="cookie-banner-actions">
+			<button id="accept-cookies" class="btn btn-action">Aceptar</button>
+			<button id="reject-cookies" class="btn btn-default">Rechazar</button>
+		</div>
+	</div>
+
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="assets/js/headroom.min.js"></script>
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>

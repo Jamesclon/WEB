@@ -11,7 +11,11 @@
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 
-	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
@@ -32,12 +36,13 @@
 		<div class="container">
 			<div class="navbar-header">
 				<!-- Button for smallest screens -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#navbar-collapse-1"><span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> </button>
 				<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"
 						alt="JamesClon Aplicaciones"></a>
 			</div>
-			<div class="navbar-collapse collapse">
+			<div class="navbar-collapse collapse" id="navbar-collapse-1">
 				<ul class="nav navbar-nav pull-right">
 					<li><a href="index.html">Inicio</a></li>
 					<li class="active"><a href="about.html">Nosotros</a></li>
@@ -60,65 +65,82 @@
 	<header id="head" class="secondary"></header>
 
 	<!-- container -->
-	<div class="container">
+	<div class="container maincontent">
 
 		<ol class="breadcrumb">
 			<li><a href="index.html">Inicio</a></li>
 			<li class="active">Nosotros</li>
 		</ol>
 
-		<div class="row">
-
-			<!-- Article main content -->
-			<article class="col-sm-8 maincontent">
-				<header class="page-header">
-					<h1 class="page-title">Sobre nosotros</h1>
-				</header>
-				<h3>Pasión por el desarrollo</h3>
-				<p><img src="assets/images/mac.jpg" alt="" class="img-rounded pull-right" width="300"> JamesClon
-					Aplicaciones es un pequeño estudio de desarrollo independiente ubicado en Valladolid, España. Desde
-					nuestra fundación en 2020, nos hemos centrado en crear aplicaciones que no solo sean funcionales,
-					sino también entretenidas y útiles para el día a día de nuestros usuarios.</p>
-				<p>Lo que comenzó como una curiosidad por el ecosistema Android ha evolucionado hacia la creación de
-					herramientas educativas como <strong>Desafío Verbos: El Peral</strong>, así como incursiones en el
-					mundo de la Realidad Virtual con contenidos para Meta Quest.</p>
-
-				<h3>Nuestra Filosofía</h3>
-				<p>En JamesClon creemos en la simplicidad y en el trabajo bien hecho. No buscamos saturar el mercado con
-					cientos de aplicaciones genéricas; preferimos poner todo nuestro esfuerzo en unos pocos proyectos de
-					calidad que aporten un valor real. Cada línea de código que escribimos está pensada para ofrecer la
-					mejor experiencia de usuario posible.</p>
-
-				<h3>¿Por qué elegirnos?</h3>
-				<p>Somos un equipo cercano. Cuando descargas una de nuestras aplicaciones o visitas una web diseñada por
-					nosotros, estás viendo el resultado de horas de dedicación personalizada. Nos especializamos en:</p>
-				<ul>
-					<li>Desarrollo de aplicaciones Android nativas.</li>
-					<li>Creación de experiencias de Realidad Virtual.</li>
-					<li>Diseño web moderno con HTML5 y CSS3.</li>
-					<li>Asesoramiento tecnológico para proyectos digitales.</li>
-				</ul>
-			</article>
-			<!-- /Article -->
-
-			<!-- Sidebar -->
-			<aside class="col-sm-4 sidebar sidebar-right">
-
-				<div class="widget">
-					<h4>Nuestra Misión</h4>
-					<p>Aportar soluciones tecnológicas creativas y accesibles para todos los públicos, manteniendo
-						siempre los más altos estándares de calidad y privacidad.</p>
+		<!-- Introduction Section -->
+		<section class="about-section animate-up">
+			<div class="row">
+				<div class="col-md-6">
+					<header class="page-header">
+						<h1 class="page-title">Sobre nosotros</h1>
+					</header>
+					<h3 class="text-primary">Pasión por el desarrollo</h3>
+					<p>JamesClon Aplicaciones es un pequeño estudio de desarrollo independiente ubicado en Valladolid,
+						España. Desde nuestra fundación en 2020, nos hemos centrado en crear aplicaciones que no solo
+						sean funcionales, sino también entretenidas y útiles para el día a día de nuestros usuarios.</p>
+					<p>Lo que comenzó como una curiosidad por el ecosistema Android ha evolucionado hacia la creación de
+						herramientas educativas como <strong>Desafío Verbos: El Peral</strong>, así como incursiones en
+						el mundo de la Realidad Virtual con contenidos para Meta Quest.</p>
 				</div>
-				<div class="widget">
-					<h4>Ubicación</h4>
-					<p>Valladolid, España. Un entorno desde el que conectamos con usuarios de todo el mundo a través de
-						la red.</p>
+				<div class="col-md-6">
+					<img src="assets/images/mac.jpg" alt="JamesClon Studio"
+						class="img-responsive img-rounded shadow-lg mt-40">
 				</div>
+			</div>
+		</section>
 
-			</aside>
-			<!-- /Sidebar -->
+		<hr>
 
-		</div>
+		<!-- Values Grid Section -->
+		<section class="about-section animate-up">
+			<div class="text-center">
+				<h2 class="thin">Nuestra Filosofía</h2>
+				<p class="lead text-muted">Creemos en la simplicidad y en el trabajo bien hecho.</p>
+			</div>
+
+			<div class="row top-space">
+				<div class="col-md-4">
+					<div class="value-card">
+						<i class="fa fa-heart-o"></i>
+						<h4>Calidad Real</h4>
+						<p>No buscamos saturar el mercado con aplicaciones genéricas; ponemos todo nuestro esfuerzo en
+							pocos proyectos que aporten un valor real.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="value-card">
+						<i class="fa fa-code"></i>
+						<h4>Dedicación</h4>
+						<p>Cada línea de código que escribimos está pensada para ofrecer la mejor experiencia de usuario
+							posible. Dedicación personalizada en cada pixel.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="value-card">
+						<i class="fa fa-users"></i>
+						<h4>Cercanía</h4>
+						<p>Somos un equipo cercano. Cuando descargas nuestras apps, estás viendo el resultado de horas
+							de pasión y compromiso directo.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Mision & Vision -->
+		<section class="about-section animate-up">
+			<div class="vision-box">
+				<h2 class="thin">Nuestra Misión</h2>
+				<p class="lead">Aportar soluciones tecnológicas creativas y accesibles para todos los públicos,
+					manteniendo siempre los más altos estándares de calidad y privacidad.</p>
+				<p>Desde Valladolid, España, conectamos con usuarios de todo el mundo a través de la red.</p>
+			</div>
+		</section>
+
 	</div> <!-- /container -->
 
 
@@ -174,7 +196,8 @@
 								<a href="index.html">Inicio</a> |
 								<a href="about.html">Nosotros</a> |
 								<a href="sidebar-right.html">Otros</a> |
-								<a href="contact.html">Contacto</a>
+								<a href="contact.html">Contacto</a> |
+								<a href="politica-privacidad-web.html">Privacidad</a>
 							</p>
 						</div>
 					</div>
@@ -194,9 +217,10 @@
 	</footer>
 
 
+
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="assets/js/headroom.min.js"></script>
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>

@@ -11,7 +11,11 @@
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 
-	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
@@ -32,12 +36,13 @@
 		<div class="container">
 			<div class="navbar-header">
 				<!-- Button for smallest screens -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#navbar-collapse-1"><span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> </button>
 				<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"
 						alt="JamesClon Aplicaciones"></a>
 			</div>
-			<div class="navbar-collapse collapse">
+			<div class="navbar-collapse collapse" id="navbar-collapse-1">
 				<ul class="nav navbar-nav pull-right">
 					<li><a href="index.html">Inicio</a></li>
 					<li><a href="about.html">Nosotros</a></li>
@@ -60,74 +65,74 @@
 	<header id="head" class="secondary"></header>
 
 	<!-- container -->
-	<div class="container">
+	<div class="container maincontent">
 
 		<ol class="breadcrumb">
 			<li><a href="index.html">Inicio</a></li>
 			<li class="active">Android</li>
 		</ol>
 
-		<div class="row">
+		<section class="about-section animate-up">
+			<header class="page-header">
+				<h1 class="page-title">Aplicaciones Android</h1>
+			</header>
+			<p class="lead text-muted">Explora nuestros desarrollos nativos diseñados para ofrecer la mejor experiencia
+				en dispositivos móviles.</p>
+		</section>
 
-			<!-- Sidebar -->
-			<aside class="col-md-4 sidebar sidebar-left">
-
-				<div class="row widget">
-					<div class="col-xs-12">
-						<h4>Google Play</h4>
-						<p>Puedes encontrar todos nuestros desarrollos oficiales en nuestra página de desarrollador de
-							Google Play.</p>
-						<p><a class="btn btn-action"
-								href="https://play.google.com/store/apps/dev?id=6573172208926767977"
-								target="_blank">Visitar Tienda</a></p>
+		<!-- Apps Grid -->
+		<section class="about-section animate-up">
+			<div class="row">
+				<!-- App Verbos -->
+				<div class="col-md-6">
+					<div class="value-card text-left p-40">
+						<i class="fa fa-book text-primary"></i>
+						<h3>Desafío Verbos: El Peral</h3>
+						<p>Nuestra aplicación estrella para el aprendizaje de verbos irregulares en inglés. Diseñada con
+							un enfoque lúdico, permite a los estudiantes de todos los niveles mejorar su gramática de
+							una forma dinámica y eficiente.</p>
+						<p>Incluye sistemas de ranking online, guardado en la nube y una interfaz intuitiva que facilita
+							el estudio diario.</p>
+						<br>
+						<a href="https://play.google.com/store/apps/details?id=com.jamesclon.verbs" target="_blank"
+							class="btn btn-action">Ver en Google Play</a>
+						<a href="politica-privacidad-verbs.html" class="btn btn-default"
+							class="btn btn-default mt-10">Privacidad</a>
 					</div>
 				</div>
-				<div class="row widget">
-					<div class="col-xs-12">
-						<h4>Privacidad</h4>
-						<p>Nos tomamos muy en serio la seguridad de tus datos. Consulta nuestras políticas de privacidad
-							para cada aplicación.</p>
-						<ul>
-							<li><a href="politica-privacidad-verbs.html">Privacidad Desafío Verbos</a></li>
-							<li><a href="politica-privacidad-who.html">Privacidad Who Radio</a></li>
-						</ul>
+
+				<!-- App Who Radio -->
+				<div class="col-md-6">
+					<div class="value-card text-left p-40">
+						<i class="fa fa-microphone text-primary"></i>
+						<h3>Who Radio</h3>
+						<p>La aplicación oficial para escuchar la radio online de Whoisindahouse. Disfruta de la mejor
+							música electrónica directamente en tu dispositivo móvil con una calidad de audio excepcional
+							y una interfaz minimalista.</p>
+						<p>Perfecta para llevar la música contigo a cualquier parte, con soporte para reproducción en
+							segundo plano y controles integrados.</p>
+						<br>
+						<a href="https://play.google.com/store/apps/details?id=com.jamesclon.whoradio" target="_blank"
+							class="btn btn-action">Ver en Google Play</a>
+						<a href="politica-privacidad-who.html" class="btn btn-default"
+							class="btn btn-default mt-10">Privacidad</a>
 					</div>
 				</div>
+			</div>
+		</section>
 
-			</aside>
-			<!-- /Sidebar -->
+		<!-- Developer Highlight -->
+		<section class="about-section animate-up">
+			<div class="vision-box">
+				<i class="fa fa-google fa-3x mb-20"></i>
+				<h2 class="thin">Developer Page</h2>
+				<p class="lead">Puedes encontrar todos nuestros desarrollos oficiales en nuestra página de desarrollador
+					de Google Play.</p>
+				<a href="https://play.google.com/store/apps/dev?id=6573172208926767977" target="_blank"
+					class="btn btn-action btn-lg">Visitar Tienda Oficial</a>
+			</div>
+		</section>
 
-			<!-- Article main content -->
-			<article class="col-md-8 maincontent">
-				<header class="page-header">
-					<h1 class="page-title">Aplicaciones Android</h1>
-				</header>
-
-				<h3>Desafío Verbos: El Peral</h3>
-				<p>Nuestra aplicación estrella para el aprendizaje de verbos irregulares en inglés. Diseñada con un
-					enfoque lúdico, permite a los estudiantes de todos los niveles mejorar su gramática de una forma
-					dinámica y eficiente.</p>
-				<p>Incluye sistemas de ranking online, guardado en la nube y una interfaz intuitiva que facilita el
-					estudio diario.</p>
-				<p><a href="https://play.google.com/store/apps/details?id=com.jamesclon.verbs" target="_blank"
-						class="btn btn-default">Más
-						información</a></p>
-
-				<hr>
-
-				<h3>Who Radio</h3>
-				<p>La aplicación oficial para escuchar la radio online de Whoisindahouse. Disfruta de la mejor música
-					electrónica directamente en tu dispositivo móvil con una calidad de audio excepcional y una interfaz
-					minimalista.</p>
-				<p>Perfecta para llevar la música contigo a cualquier parte, con soporte para reproducción en segundo
-					plano y controles integrados.</p>
-				<p><a href="https://play.google.com/store/apps/details?id=com.jamesclon.whoradio" target="_blank"
-						class="btn btn-default">Ver en Google Play</a></p>
-
-			</article>
-			<!-- /Article -->
-
-		</div>
 	</div> <!-- /container -->
 
 
@@ -183,7 +188,8 @@
 								<a href="index.html">Inicio</a> |
 								<a href="about.html">Nosotros</a> |
 								<a href="sidebar-right.html">Otros</a> |
-								<a href="contact.html">Contacto</a>
+								<a href="contact.html">Contacto</a> |
+								<a href="politica-privacidad-web.html">Privacidad</a>
 							</p>
 						</div>
 					</div>
@@ -203,9 +209,10 @@
 	</footer>
 
 
+
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="assets/js/headroom.min.js"></script>
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>
